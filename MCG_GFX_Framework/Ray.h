@@ -1,3 +1,4 @@
+#pragma once
 #include <GLM/glm.hpp>
 
 class Ray
