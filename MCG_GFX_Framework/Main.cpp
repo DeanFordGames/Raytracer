@@ -40,7 +40,7 @@ int main( int argc, char *argv[] )
 			// Preparing a position to draw a pixel
 			glm::ivec2 pixelPosition = glm::ivec2(x, y);
 
-			Ray ray = cam.returnRay(pixelPosition);
+			Ray ray = cam.returnRay(pixelPosition, windowSize);
 
 			pixelColour = tracer.returnColour(ray);
 
