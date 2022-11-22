@@ -13,7 +13,7 @@ glm::vec3 Tracer::returnColour(Ray ray)
 
 	if (object.rayToSphere(ray) != glm::vec3(0.0f, 0.0f, 0.0f))
 	{
-		rtn = glm::vec3(0.9f, 0.9f, 0.9f);
+		rtn = object.calculateColour(ray, pos);
 	}
 
 	return rtn;

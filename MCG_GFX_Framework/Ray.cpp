@@ -11,7 +11,7 @@ glm::vec3 Ray::closestPointOnLine(glm::vec3 queryPoint)
 	glm::vec3 temp = queryPoint - _origin;
 	float dotP = glm::dot(temp, glm::normalize(_direction));
 
-	glm::vec3 rtn = _origin + glm::normalize(_direction) * dotP;
+	glm::vec3 rtn = _origin + (glm::normalize(_direction) * dotP);
 
 	return rtn;
 }

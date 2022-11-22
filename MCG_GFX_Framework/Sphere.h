@@ -12,6 +12,7 @@ public:
 
 	glm::vec3 rayToSphere(Ray ray);
 
+	glm::vec3 _surfaceColour;
 	glm::vec3 _centre;
 	float _radius;
 
