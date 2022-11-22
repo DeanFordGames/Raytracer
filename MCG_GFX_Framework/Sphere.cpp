@@ -4,8 +4,8 @@
 
 Sphere::Sphere()
 {
-	_centre = glm::vec3(0.0f, 0.0f, 0.0f);
-	_radius = 10.0f;
+	_centre = glm::vec3(-4.0f, 0.0f, 0.0f);
+	_radius = 1.0f;
 }
 
 glm::vec3 Sphere::calculateColour(Ray ray, glm::vec3 intersection)
@@ -34,25 +34,23 @@ glm::vec3 Sphere::rayToSphere(Ray ray)
 				powf((point.z - _centre.z), 2));
 			if (distance >= -0.1f && distance <= 0.1f)
 			{
-				std::cout << "succcc" << std::endl;
+				// std::cout << "HIT" << std::endl;
 				return point;
 			}
 			else
 			{
-				std::cout << "333333" << std::endl;
 				return glm::vec3(0.0f,0.0f,0.0f);
 			}
 
 		}
 		else
 		{
-			//std::cout << "2222222" << std::endl;
 			return glm::vec3(0.0f, 0.0f, 0.0f);
 		}
 	}
 	else
 	{
-		//std::cout << "111111" << std::endl;
+
 		return glm::vec3(0.0f, 0.0f, 0.0f);
 	}
 }

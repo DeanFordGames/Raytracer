@@ -20,12 +20,12 @@ Ray Camera::returnRay(glm::ivec2 pos, glm::ivec2 screen)
 	float ndcX = (x / sX - 0.5f) * 2;
 	float ndcY = (y / sY - 0.5f) * 2;
 
-	rtn._origin.x = pos.x;
-	rtn._origin.y = pos.y;
+	rtn._origin.x = ndcX;
+	rtn._origin.y = ndcY;
 	rtn._origin.z = -1.0f;
 
-	rtn._direction.x = pos.x;
-	rtn._direction.y = pos.y;
+	rtn._direction.x = ndcX;
+	rtn._direction.y = ndcY;
 	rtn._direction.z = 1.0f;
 
 	rtn._direction = glm::normalize(rtn._direction);
