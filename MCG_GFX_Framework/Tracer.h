@@ -2,6 +2,8 @@
 #include "Ray.h"
 #include "Sphere.h"
 
+#include <vector>
+
 class Tracer
 {
 public:
@@ -9,6 +11,6 @@ public:
 
 	glm::vec3 returnColour(Ray ray);
 
-	Sphere object;
+	std::vector<Sphere> objects;
 
 };

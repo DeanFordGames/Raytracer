@@ -16,4 +16,6 @@ public:
 	glm::vec3 _centre;
 	float _radius;
 
+	bool _hit;
+
 };
