@@ -16,6 +16,8 @@ public:
 	glm::vec3 _centre;
 	float _radius;
 
+	float _shininess;
+
 	bool _hit;
 
 };

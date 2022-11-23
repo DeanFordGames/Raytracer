@@ -9,7 +9,7 @@ Tracer::Tracer()
 		for (int b = -1; b < 2; b++)
 		{
 			objects.push_back(Sphere());
-			objects[x]._centre = glm::vec3(i * 3.0f, b * 3.0f, -10.0f);
+			objects[x]._centre = glm::vec3(i * 2.0f, b * 2.0f, -10.0f);
 			x++;
 		}
 	}
