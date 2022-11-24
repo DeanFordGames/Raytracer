@@ -14,7 +14,7 @@ Sphere::Sphere()
 glm::vec3 Sphere::calculateColour(Ray ray, glm::vec3 intersection)
 {
 	glm::vec3 rtn = glm::vec3(1.0f, 0.2f, 0.1f);
-	glm::vec3 distantLight = glm::normalize(glm::vec3(0.0f, 0.0f, 0.6f));
+	glm::vec3 distantLight = glm::normalize(glm::vec3(-0.2f, -0.3f, 0.6f));
 	glm::vec3 sphereNormal = glm::normalize(intersection - _centre);
 	glm::vec3 lightColour = glm::vec3(1.0f, 1.0f, 1.0f);
 
